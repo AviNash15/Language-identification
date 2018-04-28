@@ -2,17 +2,13 @@ import numpy as np
 import pandas as pd
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.models import Model, Sequential, load_model
 from keras.utils import to_categorical
 from keras.layers import Embedding, SpatialDropout1D
 from keras.layers import GlobalMaxPool1D, GlobalAveragePooling1D
 from keras.layers import Dense, Dropout, BatchNormalization
-from keras.layers import Conv1D, MaxPool1D
 from keras.models import Sequential
 from keras.metrics import top_k_categorical_accuracy
-from sklearn.feature_extraction.text import HashingVectorizer
 from keras.callbacks import ModelCheckpoint, TensorBoard, ReduceLROnPlateau, EarlyStopping
-from collections import Counter
 from sklearn.preprocessing import LabelEncoder
 from sklearn.externals import joblib
 import time
